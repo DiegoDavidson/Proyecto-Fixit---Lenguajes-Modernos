@@ -44,4 +44,5 @@
     <string name="Cambio_página_1">Página 1</string>
     <string name="titulo_home">Home</string>
     <string name="Texto_foto_de_perfil">Foto de Perfil</string>
+    <string name="contrasena_2">Confirmar la contraseña</string>
 </resources>

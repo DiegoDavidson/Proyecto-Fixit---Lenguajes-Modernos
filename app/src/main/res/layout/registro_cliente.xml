@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/registro_cliente_layout">
 
     <TextView
         android:id="@+id/Registro"
@@ -29,11 +30,11 @@
 
     <ImageView
         android:id="@+id/imagen"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="91dp"
+        android:layout_height="92dp"
         android:layout_below="@id/Registro"
-        android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
         android:background="@drawable/imgperfil" />
 
     <LinearLayout
@@ -45,9 +46,8 @@
         android:orientation="vertical"
         android:layout_centerHorizontal="true">
 
-
         <TextView
-            android:id="@+id/TVnombre_apellido_cliente"
+            android:id="@+id/TVnombre_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
@@ -63,34 +63,34 @@
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center"
+            android:inputType="textEmailAddress"
             android:background="@drawable/image_rectangle1"
             />
 
+
         <TextView
-            android:id="@+id/TVrut_cliente"
+            android:id="@+id/TVcorreo_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="-0.5dp"
             android:layout_gravity="top"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/rut"
+            android:text="@string/correo_electronico"
             android:textColor="#FF000000"
             android:textSize="20sp"
-            android:layout_marginStart="30dp"
-            />
+            android:layout_marginStart="25dp"/>
 
         <EditText
-            android:id="@+id/rut_cliente"
+            android:id="@+id/ETcorreo_cliente"
             android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center"
+            android:inputType="textEmailAddress"
             android:background="@drawable/image_rectangle1"
             />
 
         <TextView
-            android:id="@+id/Tvtelefono_cliente"
+            android:id="@+id/TVtelefono_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -100,20 +100,21 @@
             android:text="@string/telefono"
             android:textColor="#FF000000"
             android:textSize="20sp"
-            android:layout_marginStart="30dp"/>
+            android:layout_marginStart="30dp"
+            />
 
         <EditText
-            android:id="@+id/correo_cliente"
+            android:id="@+id/ETtelefono_cliente"
             android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:inputType="textEmailAddress"
             android:layout_gravity="center"
+            android:inputType="number|phone"
             android:background="@drawable/image_rectangle1"
             />
 
         <TextView
-            android:id="@+id/TVcontraseña_cliente"
+            android:id="@+id/Tvcontra1_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -123,15 +124,38 @@
             android:text="@string/contrasena"
             android:textColor="#FF000000"
             android:textSize="20sp"
+            android:layout_marginStart="30dp"/>
+
+        <EditText
+            android:id="@+id/ETcontra_cliente"
+            android:layout_width="347dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:background="@drawable/image_rectangle1"
+            />
+
+        <TextView
+            android:id="@+id/TVcontra2_cliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/contrasena_2"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
             android:layout_marginStart="30dp"
             />
 
         <EditText
-            android:id="@+id/contraseña_cliente"
+            android:id="@+id/ETcontra2_cliente"
             android:layout_width="347dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:inputType="phone"
+            android:inputType="textPassword"
             android:layout_gravity="center"
             android:background="@drawable/image_rectangle1"
             />
@@ -139,7 +163,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/registro_cliente"
+        android:id="@+id/btnregistro_cliente"
         android:layout_width="275dp"
         android:layout_height="41dp"
         android:layout_below="@id/editTextContainer"
