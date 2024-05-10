@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@drawable/drawable_shape">
+
+    <ImageView
+        android:layout_width="518dp"
+        android:layout_height="942dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/drawable_image" />
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/fondogonzalo"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comentarios"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="22dp"/>
+
+    <ImageButton
+        android:id="@+id/volver"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="top"
+        android:background="@drawable/ic_flechavolver"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="125dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="360dp"
+        android:background="@color/white" />
+
+    <TextView
+      android:layout_width="344dp"
+      android:layout_height="125dp"
+      android:layout_marginHorizontal="30dp"
+      android:layout_marginTop="172dp"
+      android:background="@color/white"/>
+
+
+    <FrameLayout
+      android:id="@+id/container_nombrecliente1"
+      android:layout_width="351dp"
+      android:layout_height="50dp"
+      android:layout_marginHorizontal="30dp"
+      android:layout_marginTop="120dp">
+
+      <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/img_usergonzalo" />
+
+      <TextView
+        android:id="@+id/text_nombre_cliente1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginBottom="14.5dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Nombre Cliente"
+        android:textColor="#FF000000"
+        android:textSize="15dp" />
+
+      <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="128dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_framegonzalo" />
+  </FrameLayout>
+  
+  <FrameLayout
+      android:id="@+id/container_nombrecliente2"
+      android:layout_width="351dp"
+      android:layout_height="50dp"
+      android:layout_marginHorizontal="30dp"
+      android:layout_marginTop="310dp">
+
+      <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_usergonzalo"/>
+
+      <TextView
+        android:id="@+id/text_nombre_cliente2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginBottom="14.5dp"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Nombre Cliente 2"
+        android:textColor="#FF000000"
+        android:textSize="15dp"/>
+
+      <ImageView
+          android:id="@+id/estrellas2"
+          android:layout_width="128dp"
+          android:layout_height="32dp"
+          android:layout_marginLeft="212dp"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="top|left"
+          android:scaleType="centerInside"
+          android:src="@drawable/image_framegonzalo"/>
+  </FrameLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="323dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginHorizontal="50dp" />
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_addgonzalo"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="171dp"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/dejar_comentario_gonzalo"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fondogonzalo"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/nav_inicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/inicio"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_servicios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/servicios_gonzalo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nav_ayuda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/ayuda"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

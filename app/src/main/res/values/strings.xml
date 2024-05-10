@@ -45,4 +45,12 @@
     <string name="titulo_home">Home</string>
     <string name="Texto_foto_de_perfil">Foto de Perfil</string>
     <string name="contrasena_2">Confirmar la contraseña</string>
+    <string name="dejar_comentario_gonzalo">Dejar comentario</string>
+    <string name="servicios_gonzalo">Servicios</string>
+    <string name="calificacion">Calificacion</string>
+    <string name="comentario">Comentario</string>
+    <string name="publicar_boton">Publicar</string>
+    <string name="publicar">Publicar</string>
+    <string name="Etiqueta_Menu">Menu</string>
+    <string name="servicios_navbar_esteban">Servicios</string>
 </resources>
